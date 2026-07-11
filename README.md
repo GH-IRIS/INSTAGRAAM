@@ -1,31 +1,52 @@
-# Instagram Clone - Premium Web UI
+<h1 align="center">📸 Instagram UI Clone</h1>
+<p align="center">The feed, the stories bar, the like button — rebuilt from scratch.</p>
 
-A pixel-perfect UI clone of Instagram's web layout built with HTML5, Vanilla CSS, and JavaScript.
+<p align="center">🔗 <b><a href="https://GH-IRIS.github.io/INSTAGRAAM/">EXPERIENCE IT LIVE</a></b></p>
 
-## 📸 Features Shipped
+> ⚠️ **Educational UI clone for learning purposes only — not affiliated with Instagram / Meta.** Placeholder images and invented usernames only.
 
-1. **Persistent Sidebar Navigation**:
-   - Matches Instagram Web's responsive sidebar.
-   - Includes Instagram text logo which collapses to the glyph icon on tablet/mobile screens.
-   - Fully active navigation item status (Home, Search, Explore, Messages, Profile, etc.).
+---
 
-2. **Main Feed view**:
-   - **Horizontal Stories Bar**: Scrollable profile stories with Instagram's signature pink-purple-orange gradient borders.
-   - **Post Cards**: Layout with user headers, location tags, action button trays, like counters, captions, preview comment threads, and timestamps.
-   - **Right Suggestions Column**: Contains suggestions, user switch action, and metadata (automatically hides on tablet/mobile sizes to prevent clipping).
+## ✨ The showpieces
+- Stories bar with the signature **gradient rings** — pure CSS
+- **Like button that works** — toggles red + updates the count (JS)
+- Profile page with the classic **3-column photo grid**
 
-3. **Profile page view**:
-   - Header with details: user avatar with story ring, statistics (Posts, Followers, Following count), verified name, verified category, bio descriptions, and custom web links.
-   - Highlights tray: customizable story highlights.
-   - **3-Column Photo Grid**: Displays 9 square posts. Hovering over a post shows a translucent overlay detailing Likes & Comments.
+## 🧱 Sections
+Feed (stories bar → post cards) · Profile (header → stats → photo grid)
 
-4. **Animations & Interactivity**:
-   - **Double-click Image to Like**: Double-clicking a post image displays a giant white heart overlay pop-up animation in the center of the image, updating the like count and coloring the heart red.
-   - **Button Likes**: Toggling likes directly from the heart icon updates the count dynamically.
-   - **Working Comment Section**: Post new comments dynamically under feed posts. Text triggers a blue "Post" button and adds comments immediately.
-   - **View Switcher**: Click on "Home" or the Logo to view the feed, and "Profile" to view your personal wall.
+## 🛠 Stack
+HTML5 · CSS3 · Vanilla JS interactions (Antigravity Code Assistant where AI helped) · GitHub Pages
 
-## 🛠️ Built With
-- **HTML5**: Semantic tags (`article`, `aside`, `main`, `header`, `nav`).
-- **Vanilla CSS**: Custom styling variables, custom interactive elements, CSS animations (`@keyframes`), flexbox, and grid layouts.
-- **JavaScript (ES6)**: State management, event listeners, double click triggers, dynamic list generators, and view swappers.
+## 🎨 Inspired by
+Dribbble dashboard components & the official Instagram Web Interface layout.
+
+## 🤖 AI usage · 📚 What I learned
+I styled the flexbox alignments and navigation layout. AI wrote the DOM queries for the click handlers, created the image placeholder grid, and automated like-button toggling with state retention.
+
+---
+
+## 🎓 About TAP Academy
+
+This project was built during my frontend training at **[TAP Academy](https://thetapacademy.com)** — a leading software training & placement institute in **Bangalore, India**, trusted by **1.5+ lakh students**.
+
+**Why students choose TAP Academy:**
+- 🚀 **Get placed in 60 days** — dedicated placement track with daily placement drives
+- 🥽 **Augmented Reality (AR) classrooms** — concepts you can see, not just read
+- 🎤 **Weekly mock interviews** with real-time feedback
+- 👨🏫 **1-on-1 mentorship** and round-the-clock doubt support
+- 💻 Courses in **Java, Python, Full Stack Development, Data Science & AI**
+
+### ❓ FAQ
+
+**What is TAP Academy?**
+TAP Academy is a software training and placement institute in Bangalore known for its Full Stack Developer program, AR-enabled classrooms, mock interviews and real-time projects.
+
+**Does TAP Academy provide placement support?**
+Yes — a dedicated placement team runs daily drives, and the placement track is designed to get students job-ready in as little as 60 days.
+
+**Where can I learn more?**
+🔗 [Website](https://thetapacademy.com) · [Placements](https://thetapacademy.com/placements) · [LinkedIn](https://in.linkedin.com/company/thetapacademy) · [YouTube](https://www.youtube.com/tapacademy)
+
+---
+*⭐ If you liked this project, star the repo — it helps more students discover it.*
