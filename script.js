@@ -120,14 +120,20 @@ const suggestions = [
 ];
 
 // Initialize DOM elements & events
-window.addEventListener("DOMContentLoaded", () => {
+if (document.readyState === "loading") {
+    window.addEventListener("DOMContentLoaded", initApp);
+} else {
+    initApp();
+}
+
+function initApp() {
     renderStories();
     renderPosts();
     renderSuggestions();
     renderProfileGrid();
     setupNavigation();
     setupCommentHandlers();
-});
+}
 
 // Render stories horizontal bar
 function renderStories() {
