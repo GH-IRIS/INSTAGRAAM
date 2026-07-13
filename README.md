@@ -19,9 +19,8 @@ Feed (stories bar → post cards) · Profile (header → stats → photo grid)
 HTML5 · CSS3 · Vanilla JS interactions (Antigravity Code Assistant where AI helped) · GitHub Pages
 
 ## 📸 Screenshots
-| Feed View | Stories View | Profile View |
-|-----------|--------------|--------------|
-| ![Feed](https://GH-IRIS.github.io/Portfolio/assets/instagram_1.png) | ![Stories](https://GH-IRIS.github.io/Portfolio/assets/instagram_2.png) | ![Profile](https://GH-IRIS.github.io/Portfolio/assets/instagram_3.png) |
+
+| ![Feed](https://github.com/GH-IRIS/INSTAGRAAM/blob/main/assets/instagram.png) |
 
 ## 🎨 Inspired by
 Dribbble dashboard components & the official Instagram Web Interface layout.
@@ -36,7 +35,7 @@ I styled the flexbox alignments and navigation layout. AI wrote the DOM queries 
 This project was built during my frontend training at **[TAP Academy](https://thetapacademy.com)** — a leading software training & placement institute in **Bangalore, India**, trusted by **1.5+ lakh students**.
 
 **Why students choose TAP Academy:**
-- 🚀 **Get placed in 60 days** — dedicated placement track with daily placement drives
+- 🚀 **Get placed in 120 days** — dedicated placement track with daily placement drives
 - 🥽 **Augmented Reality (AR) classrooms** — concepts you can see, not just read
 - 🎤 **Weekly mock interviews** with real-time feedback
 - 👨‍🏫 **1-on-1 mentorship** and round-the-clock doubt support
