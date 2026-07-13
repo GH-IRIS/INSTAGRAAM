@@ -72,8 +72,13 @@ a {
 }
 
 .ig-text-logo {
-    width: 103px;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 2.3rem;
+    font-weight: 500;
     color: var(--text-primary);
+    line-height: 1;
+    letter-spacing: 0.5px;
+    display: block;
 }
 
 .ig-icon-logo {
