@@ -14,8 +14,9 @@ const feedPosts = [
     {
         id: "post-1",
         userIndex: 0,
+        type: "image",
         location: "Yosemite National Park",
-        image: "https://picsum.photos/200/300",
+        image: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&auto=format&fit=crop&q=80",
         likes: 1242,
         caption: "Waking up in the middle of giant pines. Nature never fails to amaze me. 🌲🏕️ #explore #nature",
         comments: [
@@ -28,8 +29,9 @@ const feedPosts = [
     {
         id: "post-2",
         userIndex: 1,
+        type: "image",
         location: "Venice, Italy",
-        image: "https://picsum.photos/200/300",
+        image: "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&auto=format&fit=crop&q=80",
         likes: 852,
         caption: "Lost in the canals. Every corner has a story to tell. 🚣‍♂️✨ #travelgram #venice",
         comments: [
@@ -42,14 +44,59 @@ const feedPosts = [
     {
         id: "post-3",
         userIndex: 2,
-        location: "Green Leaf Café",
-        image: "https://picsum.photos/200/300",
+        type: "video",
+        location: "Jazz Lounge, New York",
+        video: "https://assets.mixkit.co/videos/preview/mixkit-spinning-vinyl-record-player-closeup-3183-large.mp4",
         likes: 410,
-        caption: "Fueling up with organic goodness. Eat clean, feel amazing! 🥗💚 #healthy #vegan",
+        caption: "Late night jazz and warm vinyl crackles. Best way to unwind. 🎷📻 #vinyl #jazzmusic #relaxing",
         comments: [
-            { username: "chloe_bakes", text: "Looks delicious Emily!" }
+            { username: "chloe_bakes", text: "What record is spinning?" }
         ],
         time: "1 day ago",
+        liked: false
+    },
+    {
+        id: "post-4",
+        userIndex: 3,
+        type: "image",
+        location: "Maldives Beach Resort",
+        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&auto=format&fit=crop&q=80",
+        likes: 2315,
+        caption: "Infinite shades of blue. Found my absolute happy place. 🏝️☀️ #islandlife #paradise #travel",
+        comments: [
+            { username: "alex_adventures", text: "Unreal view, David! Take me with you." },
+            { username: "sarah_travels", text: "Omg, the water is crystal clear!" }
+        ],
+        time: "2 days ago",
+        liked: false
+    },
+    {
+        id: "post-5",
+        userIndex: 4,
+        type: "video",
+        location: "Shibuya, Tokyo",
+        video: "https://assets.mixkit.co/videos/preview/mixkit-urban-city-traffic-at-night-3129-large.mp4",
+        likes: 1948,
+        caption: "Tokyo nights in high speed. The neon pulse of Shibuya is unmatched. 🗼🌌 #tokyo #cyberpunk #neon",
+        comments: [
+            { username: "emily_design", text: "The motion blur of the lights is incredible!" },
+            { username: "david_clicks", text: "Brilliant capture. Handheld?" }
+        ],
+        time: "3 days ago",
+        liked: false
+    },
+    {
+        id: "post-6",
+        userIndex: 5,
+        type: "image",
+        location: "Sneaker Lab",
+        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop&q=80",
+        likes: 984,
+        caption: "Classic red never goes out of style. Clean kicks for a fresh start. 👟🔥 #sneakers #streetwear #redstyle",
+        comments: [
+            { username: "james_fit", text: "Instant cop! Looks so clean." }
+        ],
+        time: "4 days ago",
         liked: false
     }
 ];
@@ -125,6 +172,18 @@ function renderPosts() {
             </p>
         `).join('');
 
+        // Media Element: Image or Video
+        let mediaHtml = "";
+        if (post.type === "video") {
+            mediaHtml = `
+                <video src="${post.video}" class="post-img post-video" loop muted autoplay playsinline></video>
+            `;
+        } else {
+            mediaHtml = `
+                <img src="${post.image}" alt="Post image" class="post-img">
+            `;
+        }
+
         return `
             <article class="post-card" id="post-${post.id}">
                 <!-- Header -->
@@ -143,9 +202,9 @@ function renderPosts() {
                     <button class="post-menu-btn"><span class="material-symbols-rounded">more_horiz</span></button>
                 </div>
 
-                <!-- Post Image -->
+                <!-- Post Media -->
                 <div class="post-image-container" data-post-index="${index}">
-                    <img src="${post.image}" alt="Post image" class="post-img">
+                    ${mediaHtml}
                     <span class="material-symbols-rounded heart-pop-animation">favorite</span>
                 </div>
 
