@@ -902,3 +902,49 @@ a {
         justify-content: center;
     }
 }
+
+/* Verified Badge */
+.verified-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+.verified-badge svg {
+    display: block;
+}
+
+/* Post Sponsored Label */
+.post-location.sponsored-label {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 11.5px;
+    text-transform: capitalize;
+}
+
+/* Post CTA Bar (Sponsored) */
+.post-cta-bar {
+    background-color: #2b9b91;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13.5px;
+    transition: background-color 0.2s;
+    border-top: 1px solid var(--border-color);
+}
+
+.post-cta-bar:hover {
+    background-color: #24847b;
+}
+
+.post-cta-bar span {
+    display: flex;
+    align-items: center;
+}
+
