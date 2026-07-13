@@ -176,6 +176,10 @@ a {
     overflow-y: auto;
 }
 
+.mobile-top-header {
+    display: none;
+}
+
 /* View panels */
 .view-panel {
     width: 100%;
@@ -957,9 +961,42 @@ a {
         padding: 0;
     }
 
+    .mobile-top-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        height: 48px;
+        border-bottom: 1px solid var(--border-color);
+        background-color: var(--bg-base);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .mobile-top-header .ig-text-logo {
+        display: block;
+        font-size: 24px;
+    }
+
+    .mobile-top-actions {
+        display: flex;
+        gap: 16px;
+        color: var(--text-primary);
+    }
+
+    .mobile-top-actions span {
+        font-size: 24px;
+        cursor: pointer;
+        display: block;
+    }
+
     .main-window {
         margin-left: 0;
         margin-bottom: 60px;
+        padding-top: 48px;
     }
 
     .feed-content-wrapper {
