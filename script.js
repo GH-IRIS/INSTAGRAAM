@@ -506,6 +506,31 @@ function setupNavigation() {
         e.preventDefault();
         showProfile();
     });
+
+    // Toggle mobile dropdown menu
+    const moreMenuBtn = document.querySelector(".more-menu-btn");
+    const mobileDropdown = document.getElementById("mobile-extra-dropdown");
+
+    if (moreMenuBtn && mobileDropdown) {
+        moreMenuBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            mobileDropdown.classList.toggle("open");
+        });
+
+        // Close dropdown when clicking a link inside it
+        mobileDropdown.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", () => {
+                mobileDropdown.classList.remove("open");
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!mobileDropdown.contains(e.target) && !moreMenuBtn.contains(e.target)) {
+                mobileDropdown.classList.remove("open");
+            }
+        });
+    }
 }
 
 // Comment Additions logic

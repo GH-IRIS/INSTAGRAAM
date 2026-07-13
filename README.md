@@ -18,6 +18,11 @@ Feed (stories bar → post cards) · Profile (header → stats → photo grid)
 ## 🛠 Stack
 HTML5 · CSS3 · Vanilla JS interactions (Antigravity Code Assistant where AI helped) · GitHub Pages
 
+## 📸 Screenshots
+| Feed View | Stories View | Profile View |
+|-----------|--------------|--------------|
+| ![Feed](https://GH-IRIS.github.io/Portfolio/assets/instagram_1.png) | ![Stories](https://GH-IRIS.github.io/Portfolio/assets/instagram_2.png) | ![Profile](https://GH-IRIS.github.io/Portfolio/assets/instagram_3.png) |
+
 ## 🎨 Inspired by
 Dribbble dashboard components & the official Instagram Web Interface layout.
 
@@ -34,7 +39,7 @@ This project was built during my frontend training at **[TAP Academy](https://th
 - 🚀 **Get placed in 60 days** — dedicated placement track with daily placement drives
 - 🥽 **Augmented Reality (AR) classrooms** — concepts you can see, not just read
 - 🎤 **Weekly mock interviews** with real-time feedback
-- 👨🏫 **1-on-1 mentorship** and round-the-clock doubt support
+- 👨‍🏫 **1-on-1 mentorship** and round-the-clock doubt support
 - 💻 Courses in **Java, Python, Full Stack Development, Data Science & AI**
 
 ### ❓ FAQ

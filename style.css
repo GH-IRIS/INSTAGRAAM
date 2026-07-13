@@ -95,6 +95,13 @@ a {
     flex: 1;
 }
 
+.mobile-extra-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
 .nav-link {
     display: flex;
     align-items: center;
@@ -850,6 +857,13 @@ a {
         align-items: center;
         gap: 16px;
     }
+    .mobile-extra-dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+    }
     .nav-link {
         justify-content: center;
         width: 48px;
@@ -867,6 +881,7 @@ a {
     }
     .feed-content-wrapper {
         gap: 20px;
+        justify-content: center;
     }
     .feed-right-col {
         display: none; /* Hide suggestion bar on narrower screens */
@@ -874,6 +889,84 @@ a {
 }
 
 @media (max-width: 768px) {
+    .side-navigation {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        width: 100vw;
+        height: 60px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 16px;
+        border-right: none;
+        border-top: 1px solid var(--border-color);
+        background-color: var(--bg-base);
+        z-index: 1000;
+    }
+
+    .brand-logo-container {
+        display: none;
+    }
+
+    .sidebar-nav {
+        display: contents;
+    }
+
+    .mobile-extra-dropdown {
+        display: none;
+        position: absolute;
+        bottom: 70px;
+        right: 16px;
+        background-color: var(--bg-base);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+        padding: 8px;
+        flex-direction: column;
+        gap: 4px;
+        min-width: 180px;
+        z-index: 1001;
+    }
+
+    .mobile-extra-dropdown.open {
+        display: flex;
+    }
+
+    .mobile-extra-dropdown .nav-link {
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        padding: 10px 14px;
+        gap: 12px;
+    }
+
+    .mobile-extra-dropdown .link-label {
+        display: block !important;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+
+    .more-menu-btn {
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .main-window {
+        margin-left: 0;
+        margin-bottom: 60px;
+    }
+
+    .feed-content-wrapper {
+        padding: 16px 12px;
+        justify-content: center;
+    }
+
     .profile-header-section {
         flex-direction: column;
         align-items: center;
